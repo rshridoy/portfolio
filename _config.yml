@@ -1,0 +1,8 @@
+# GitHub Pages configuration
+# This file configures GitHub Pages to use the proper settings for your website
+
+# Force HTTPS
+enforce_https: true
+
+# Set the 404 page
+404_page: 404.html
