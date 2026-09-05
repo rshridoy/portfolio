@@ -301,13 +301,13 @@ export const thesis = {
 export const publications = [
   {
     title:
-      "Classification of Potato Disease with Digital Image Processing Technique: A Hybrid Deep Learning Framework",
+      "PotatoGANs: Utilizing Generative Adversarial Networks, Instance Segmentation, and Explainable AI for Enhanced Potato Disease Identification and Classification",
     authors:
-      "F. T. J. Faria, M. Bin Moin, A. Al Wase, M. R. Sani, K. M. Hasib, M. S. Alam",
-    venue: "IEEE 13th Annual Computing and Communication Workshop and Conference (CCWC), Las Vegas, 2023, pp. 0820–0826",
-    note: "DOI 10.1109/CCWC57344.2023.10099162",
-    href: "https://doi.org/10.1109/CCWC57344.2023.10099162",
-    linkLabel: "Read the paper",
+      "F. T. J. Faria, M. Bin Moin, M. S. Alam, A. Al Wase, Md Rabius Sani, K. M. Hasib",
+    venue: "arXiv:2405.07332, 2024",
+    note: "Preprint",
+    href: "https://arxiv.org/abs/2405.07332",
+    linkLabel: "Read the preprint",
   },
   {
     title:
@@ -315,19 +315,19 @@ export const publications = [
     authors:
       "F. T. J. Faria, M. Bin Moin, A. Al Wase, M. Ahmmed, Md Rabius Sani, T. Muhammad",
     venue: "arXiv:2311.11142, 2023",
-    note: "Under review, Neural Computing and Applications",
+    note: "Preprint",
     href: "https://arxiv.org/abs/2311.11142",
     linkLabel: "Read the preprint",
   },
   {
     title:
-      "PotatoGANs: Utilizing Generative Adversarial Networks, Instance Segmentation, and Explainable AI for Enhanced Potato Disease Identification and Classification",
+      "Classification of Potato Disease with Digital Image Processing Technique: A Hybrid Deep Learning Framework",
     authors:
-      "M. S. Alam, F. T. J. Faria, M. Bin Moin, A. Al Wase, Md Rabius Sani, K. M. Hasib",
-    venue: "arXiv:2405.07332, 2024",
-    note: "Under review, Journal of Intelligent Information Systems",
-    href: "https://arxiv.org/abs/2405.07332",
-    linkLabel: "Read the preprint",
+      "F. T. J. Faria, M. Bin Moin, A. Al Wase, M. R. Sani, K. M. Hasib, M. S. Alam",
+    venue: "IEEE 13th Annual Computing and Communication Workshop and Conference (CCWC), Las Vegas, 2023, pp. 0820–0826",
+    note: "DOI 10.1109/CCWC57344.2023.10099162",
+    href: "https://doi.org/10.1109/CCWC57344.2023.10099162",
+    linkLabel: "Read the paper",
   },
 ];
 
