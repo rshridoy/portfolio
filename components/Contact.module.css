@@ -1,0 +1,147 @@
+.wrap {
+  display: grid;
+  grid-template-columns: 300px minmax(0, 1fr);
+  gap: 56px;
+  align-items: start;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.portrait {
+  width: 132px;
+  height: 132px;
+  object-fit: cover;
+  border: 1px solid var(--rule);
+  filter: grayscale(0.6) contrast(1.04) brightness(0.96);
+}
+
+.row {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.rowLabel {
+  color: var(--muted-dim);
+}
+
+.rowValue {
+  font-size: var(--step-1);
+}
+
+.rowValue a:hover {
+  color: var(--signal);
+}
+
+.copy {
+  align-self: flex-start;
+  border: 1px solid var(--rule);
+  color: var(--muted);
+  padding: 7px 14px;
+  transition: border-color 0.18s ease, color 0.18s ease;
+}
+.copy:hover {
+  border-color: var(--muted);
+  color: var(--paper);
+}
+.copied {
+  border-color: var(--signal);
+  color: var(--signal);
+}
+
+.socials {
+  display: flex;
+  gap: 18px;
+  padding-top: 4px;
+}
+
+.socials a {
+  color: var(--muted);
+  border-bottom: 1px solid var(--rule);
+  padding-bottom: 2px;
+  transition: color 0.18s ease, border-color 0.18s ease;
+}
+.socials a:hover {
+  color: var(--paper);
+  border-bottom-color: var(--signal);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  max-width: 620px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.label {
+  color: var(--muted-dim);
+}
+
+.input,
+.textarea {
+  font: inherit;
+  color: var(--paper);
+  background: var(--sheet);
+  border: 1px solid var(--rule-soft);
+  padding: 11px 13px;
+  transition: border-color 0.18s ease;
+  width: 100%;
+}
+
+.input:focus,
+.textarea:focus {
+  border-color: var(--rule);
+}
+
+.textarea {
+  resize: vertical;
+  min-height: 130px;
+  line-height: 1.6;
+}
+
+.pair {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+
+.submit {
+  align-self: flex-start;
+  background: var(--signal);
+  color: var(--ground);
+  font-weight: 600;
+  padding: 12px 22px;
+  margin-top: 4px;
+  transition: background 0.18s ease;
+}
+.submit:hover {
+  background: #ffc95a;
+}
+
+.note {
+  color: var(--muted-dim);
+  max-width: 46ch;
+}
+
+@media (max-width: 900px) {
+  .wrap {
+    grid-template-columns: 1fr;
+    gap: 38px;
+  }
+}
+
+@media (max-width: 560px) {
+  .pair {
+    grid-template-columns: 1fr;
+  }
+}

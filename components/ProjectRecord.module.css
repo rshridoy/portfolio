@@ -1,0 +1,140 @@
+/* ---- Featured records: one per row on the sheet ---- */
+.record {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 320px;
+  gap: 48px;
+  padding: 34px 0 40px;
+  border-top: 1px solid var(--rule-soft);
+}
+
+.record:first-child {
+  border-top: 0;
+  padding-top: 0;
+}
+
+.head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 4px;
+}
+
+.title {
+  font-size: var(--step-2);
+}
+
+.year {
+  color: var(--muted-dim);
+  flex: none;
+}
+
+.context {
+  color: var(--signal-dim);
+  margin-bottom: 16px;
+}
+
+.summary {
+  font-size: var(--step-1);
+  margin-bottom: 20px;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  color: var(--muted);
+  max-width: var(--measure);
+}
+
+.details li {
+  padding-left: 20px;
+  position: relative;
+}
+
+.details li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.66em;
+  width: 9px;
+  height: 1px;
+  background: var(--rule);
+}
+
+.aside {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  min-width: 0;
+}
+
+.stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.chip {
+  border: 1px solid var(--rule-soft);
+  color: var(--muted);
+  padding: 3px 9px;
+  white-space: nowrap;
+}
+
+/* ---- Compact records: the earlier work ---- */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1px;
+  background: var(--rule-soft);
+  border: 1px solid var(--rule-soft);
+}
+
+.filler {
+  background: var(--ground);
+}
+
+.card {
+  background: var(--ground);
+  padding: 24px 22px 26px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.cardTitle {
+  font-size: var(--step-1);
+}
+
+.cardMeta {
+  display: flex;
+  justify-content: space-between;
+  gap: 14px;
+  color: var(--muted-dim);
+}
+
+.cardSummary {
+  color: var(--muted);
+  flex: 1;
+}
+
+@media (max-width: 1040px) {
+  .record {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+  .aside {
+    max-width: 380px;
+  }
+}
+
+@media (max-width: 700px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+  .head {
+    flex-direction: column;
+    gap: 2px;
+  }
+}

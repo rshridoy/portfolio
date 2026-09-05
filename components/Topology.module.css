@@ -1,0 +1,20 @@
+.figure {
+  margin: 0;
+  padding: 20px 18px 14px;
+  border: 1px solid var(--rule-soft);
+  background: color-mix(in srgb, var(--sheet) 45%, transparent);
+}
+
+.svg {
+  display: block;
+  width: 100%;
+  height: auto;
+  overflow: visible;
+}
+
+.label {
+  font-family: var(--font-mono), monospace;
+  font-size: 3.6px;
+  fill: var(--muted-dim);
+  letter-spacing: 0.02em;
+}

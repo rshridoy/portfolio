@@ -1,0 +1,32 @@
+.wrap {
+  min-height: 100svh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: var(--page);
+  margin: 0 auto;
+  padding: 60px 28px;
+  gap: 14px;
+  align-items: flex-start;
+}
+
+.code {
+  color: var(--signal);
+}
+
+.heading {
+  font-size: var(--step-3);
+}
+
+.body {
+  color: var(--muted);
+  max-width: 44ch;
+}
+
+.action {
+  margin-top: 14px;
+  background: var(--signal);
+  color: var(--ground);
+  font-weight: 600;
+  padding: 12px 22px;
+}

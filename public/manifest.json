@@ -1,0 +1,17 @@
+{
+  "name": "Md. Rabius Sani — AI & Software Engineer",
+  "short_name": "Rabius Sani",
+  "description": "Portfolio of Md. Rabius Sani: agentic AI, orchestrated data pipelines, and the microservices underneath them.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0a1e33",
+  "theme_color": "#0a1e33",
+  "icons": [
+    {
+      "src": "/icon.svg",
+      "type": "image/svg+xml",
+      "sizes": "any",
+      "purpose": "any"
+    }
+  ]
+}
